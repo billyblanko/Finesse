@@ -1,0 +1,619 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: url(/pay_img/pattern.jpg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    background: linear-gradient(135deg, hsla(277, 95%, 83%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
+}
+.logo a{
+    display: flex;
+    text-decoration: none;
+    width: 26%;
+    margin: 0px 130px;
+}
+.logo a > img{
+    width: 15vw;
+    height: 10vh;
+}
+.logo a .text{
+    font-weight: bolder;
+    font-size: 35px;
+    margin-top: 3vh;
+    margin-left: -15px;
+    color: #00308F;
+}
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(135deg, hsla(277, 95%, 83%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
+    width: 99.5vw;
+    display: none;
+    transition: all 0.4s ease;
+}
+.toggle-button:checked ~ nav{
+    display: block;
+}
+.toggle-button{
+    display: none;
+}
+.fa-bars{
+    font-size: 30px;
+    color: #00308F;
+}
+.toggle-btn-main{
+    position: absolute;
+    top: 73%;
+    left: 0;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: #00308F;
+    font-size: 12px;
+    text-transform: uppercase;
+} 
+.buttons{
+    position: absolute;
+    left: 63vw;
+    top: 73px;
+    display: flex;
+    column-gap: 15px;
+}
+.buttons .btn-one{
+    padding: 5px 10px;
+    background-color: #00308F;
+    color: #A4D3F6;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.pricing{
+    position: relative;
+    top: 25vh;
+}
+.text-p{
+    border-bottom: 1px solid #A4D3F6;
+    padding-bottom: 15px;
+}
+.text-p .pricing-header{
+    text-align: center;
+    margin-top: -30px;
+    color: #A4D3F6;
+}
+.writeup{
+    margin-left: 10px;
+    margin-top: -10px;
+    color: #A4D3F6;
+}
+.first h1{
+    text-align: center;
+    color: #A4D3F6;
+}
+.price-col-one{
+    box-shadow: 1px 1px 1px 1px #808080;
+    width: 80vw;
+    height: 80vh;
+    transform: translateX(40px);
+    background: #A4D3F6;
+    border-radius: 10px;
+}
+.price-col-one > p{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00308F;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.price-col-one sub{
+    color: #0669b4;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.header-tag{
+    font-size: 40px;
+    margin-top: -10px;
+    text-align: center;
+}
+.price-col-one ul{
+    margin-left: 20px;
+}
+.price-col-one li{
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fa-check{
+    font-size: 30px;
+    color: #70e000;
+}
+.fa-circle{
+    color: #ffc300;
+}
+.fa-circle-xmark{
+    color: rgb(255, 0, 0);
+} 
+.price-col-one .btn-plan{
+    border: none;
+    border-radius: 10px;
+    margin-left: 70px;
+    background-color: #00308F;
+    color: #fff;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+.second h1{
+    text-align: center;
+    color: #A4D3F6;
+}
+.price-col{
+    box-shadow: 1px 1px 1px 1px #808080;
+    width: 80vw;
+    height: 80vh;
+    transform: translateX(40px);
+    background: linear-gradient(135deg, hsla(277, 100%, 89%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
+    border-radius: 10px;
+}
+.price-col > p{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00308F;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.price-col sub{
+    color: #0669b4;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.price-col ul{
+    margin-left: 20px;
+}
+.price-col li{
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fa-star{
+    color: #ffc300;
+}
+.price-col .btn-plan{
+    border: none;
+    border-radius: 10px;
+    margin-left: 70px;
+    background-color: #00308F;
+    color: #fff;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+.btn-plan-p{
+    border: none;
+    border-radius: 10px;
+    margin-left: 90px;
+    background-color: #00308F;
+    color: #fff;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+.price-col-p{
+    box-shadow: 1px 1px 1px 1px #808080;
+    width: 80vw;
+    height: 89vh;
+    transform: translateX(40px);
+    background: linear-gradient(135deg, hsla(277, 100%, 89%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
+    border-radius: 10px;
+}
+.price-col-p > p{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00308F;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.price-col-p sub{
+    color: #0669b4;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.price-col-p ul{
+    margin-left: 20px;
+}
+.price-col-p li{
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.price-col-p .btn-plan{
+    border: none;
+    border-radius: 10px;
+    margin-left: 90px;
+    background-color: #00308F;
+    color: #fff;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+.footer{
+    margin-top: 350px;
+}
+.emblem{
+    margin-left: 25px;
+    display: flex;
+    gap: 80px;
+}
+ .fa-twitter{
+    color: #A4D3F6;
+ }
+ .fa-meta{
+    color: #DFACFF;
+ }
+ .fa-google{
+    color: #38b000;
+ }
+ .fa-amazon{
+    background-color: #fff;
+    height: 1.9vh;
+    padding: 0px 2px;
+ }
+
+ /* for ipad screen */
+ @media only screen and (min-width: 800px) {
+    .logo{
+        margin-top: 40px;
+    }
+    .logo a{
+       margin: 10px auto;
+    }
+    .logo a .text{
+       margin-left: -30px;
+    }
+    .buttons{
+       position: relative;
+       top: -5px;
+       left: 78vw;
+    }
+    .buttons .btn-one{
+       font-size: 18px;
+    }
+    .toggle-btn-main{
+        position: relative;
+        top: 28px;
+        cursor: pointer;
+     }
+    nav a{
+       font-size: 18px;
+    }
+    .writeup{
+        margin-left: 150px;
+    }
+    .price-col-one , .price-col , .price-col-p{
+        margin-left: 5%;
+    } 
+    .price-col-one , .price-col{
+        height: 75vh;
+    }
+    .price-col-p{
+        height: 79vh;
+    }
+    .price-col-one ul{
+        margin-left: 15%;
+    }
+    .price-col ul{
+        margin-left: 15%;
+    }
+    .price-col-p ul{
+        margin-left: 15%;
+    }
+    .price-col-one .btn-plan{
+        position: relative;
+        top: 10%;
+        left: 150px;
+    }
+    .price-col .btn-plan{
+        position: relative;
+        top: 10%;
+        left: 150px;
+    }
+    .price-col .btn-plan-p{
+        position: relative;
+        top: 10%;
+        left: 150px;
+    }
+    .price-col-p .btn-plan{
+        position: relative;
+        top: 10%;
+        left: 150px;
+    }
+    .emblem{
+        display: flex;
+        gap: 28vw; 
+        margin-top: 5%;
+        padding-left: 30px;
+     }
+     #country{
+        height: 30px;
+        font-size: 20px;
+     }
+     .bxf{
+        display: flex;
+        gap: 30px;
+        /* margin-top: 20px; */
+     }
+     .bxf i{
+        font-size: 25px;
+     }
+     .fa-twitter{
+        color: #A4D3F6;
+     }
+     .fa-meta{
+        color: #DFACFF;
+     }
+     .fa-google{
+        color: #38b000;
+     }
+     .fa-amazon{
+        background-color: #fff;
+        height: 3vh;
+        padding: 0px 5px;
+     }
+ }
+
+ /* for laptop screen */
+
+@media only screen and (min-width: 1200px){
+    .header{
+        display: flex;
+        background: linear-gradient(135deg, hsla(277, 95%, 83%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
+        margin-top: -35px;
+    }
+    .logo{
+        margin-top: 60px;
+    }
+    .logo a{
+        margin-left: 0;
+    }
+    .logo a:hover{
+      text-decoration: none;
+    }
+    .logo a > img{
+        width: 5vw;
+        height: 10vh;
+    }
+    .logo a .text{
+        font-weight: bolder;
+        font-size: 35px;
+        margin-top: 3vh;
+        margin-left: -18px;
+        color: #00308F;
+    }
+    nav{
+        display: flex;
+    }
+     nav ul{
+        display: flex;
+        margin-left: 30vw;
+        margin-top: -20px;
+        column-gap: 1.5rem;
+    }
+    nav a{
+        padding: 5px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #00308F;
+        font-size: 18px;
+    }
+    nav a:hover{
+        background-color: #DFACFF;
+        text-decoration: none;
+    }
+    .toggle-btn-main{
+        display: none;
+    }
+    .buttons{
+        margin-left: 0vw;
+        transform: translateY(100px);
+    }
+    .buttons .btn-one{
+        cursor: pointer;
+        text-decoration: none;
+        background-color: #00308F;
+        color: #c7e2f7;
+        font-size: 18px;
+        height: 15%;
+    }
+    .buttons .btn-one:hover{
+      background-color: #0343c4;
+    }
+    .pricing{
+        height: 105vh;
+    }
+    .pricing .text-p{
+        text-align: center;
+    }
+    .writeup{
+        margin-left: -30px;
+    }
+    .price-row{
+        display: flex;
+        column-gap: 30px;
+        padding-left: 10%;
+    }
+    .price-col{
+        width: 30vw;
+        height: 75vh;
+        padding: 10px 0px 50px 15px;
+    }
+    .price-col-one{
+        width: 30vw;
+        height: 75vh;
+        background: #A4D3F6;
+        color: #060221;
+        padding: 10px 0px 50px 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    }
+    .second .price-col-one{
+        width: 30vw;
+        height: 75vh;
+        background: #A4D3F6;
+        color: #060221;
+        padding: 10px 0px 50px 15px;
+    }
+    .price-col-p{
+        width: 30vw;
+        height: 75vh;
+        background: linear-gradient(135deg, hsla(277, 100%, 89%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
+        color: #060221;
+        padding: 10px 0px 50px 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .price-col-p ul li{
+        list-style-type: none;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    .price-col > p{
+        text-align: center;
+        font-size: 25px;
+    }
+    .price-col-one > p{
+        text-align: center;
+        font-size: 25px;
+    }
+    .price-col > sub{
+        color: #0669b4;
+    }
+    .price-col-one > sub{
+        color: #0669b4;
+    }
+    .price-col .header-tag{
+        font-size: 70px;
+    }
+    .price-col-one .header-tag{
+        font-size: 70px;
+    }
+    .price-col .btn-plan-p{
+        border: none;
+        border-radius: 10px;
+        margin-left: 70px;
+        position: relative;
+        top: 0px;
+        left: 100px;
+        background-color: #00308F;
+        color: #fff;
+        padding: 15px 50px;
+        text-decoration: none;
+    }
+    .price-col-p .btn-plan{
+        position: relative;
+        top: 0px;
+        left: 70px;
+    }
+    .price-col .btn-plan-p:hover{
+        background-color: #0343c4;
+    }
+    .price-col-one .btn-plan{
+        border: none;
+        border-radius: 10px;
+        margin-left: 0px;
+        position: relative;
+        top: 10px;
+        left: 100px;
+        background-color: #00308F;
+        color: #fff;
+        padding: 15px 50px;
+        text-decoration: none;
+    }
+    .price-col-one .btn-plan:hover{
+        background-color: #0343c4;
+    }
+    .price-col ul li{
+        list-style-type: none;
+        margin-bottom: 15px;
+    }
+    .price-col-one ul li{
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+    .price-col-one ul{
+        margin-bottom: 50px;
+        margin-left: -10px;
+    }
+    .price-col ul{
+        margin-bottom: 50px;
+        margin-left: -10px;
+    }
+    .price-col-p ul{
+        margin-bottom: 50px;
+        margin-left: -10px;
+    }
+    .price-col-p ul{
+        margin-top: -40px;
+    }
+    .price-col-p .header-tag{
+        font-size: 70px;
+    }
+    .price-col-p .btn-plan:hover{
+        background-color: #0343c4;
+    }
+    .footer{
+        position: relative;
+        top: 100vh;
+        left: 70px;
+   }
+   .emblem{
+      display: flex;
+      gap: 52vw;
+      margin-top: 5%;
+      padding-left: 90px;
+   }
+   #country{
+      height: 35px;
+      font-size: 20px;
+   }
+   .bxf{
+      display: flex;
+      gap: 30px; 
+      /* margin-top: 20px; */
+   }
+   .bxf a i{
+      font-size: 25px;
+   }
+   .fa-twitter{
+      color: #A4D3F6;
+   }
+   .fa-meta{
+      color: #DFACFF;
+   }
+   .fa-google{
+      color: #38b000;
+   }
+   .fa-amazon{
+      background-color: #fff;
+      padding: 0px 5px;
+      height: 3vh;
+   }
+}

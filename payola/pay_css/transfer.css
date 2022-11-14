@@ -1,0 +1,455 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+.header{
+   width: 100%;
+}
+
+.logo a{
+    display: flex;
+    text-decoration: none;
+    width: 26%;
+    margin: 0px;
+}
+.logo a > img{
+    width: 15vw;
+    height: 10vh;
+}
+.logo a .text{
+    font-weight: bolder;
+    font-size: 35px;
+    margin-top: 3vh;
+    margin-left: -15px;
+    color: #00308F;
+}
+.notif{
+    margin-top: -70px;
+    margin-left: 370px;
+    font-size: 25px;
+}
+.fa-bell{
+    color: #00308F;
+}
+.parent{
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+}
+.user h3{
+    margin-left: 20px;
+    font-size: 30px;
+    color: #494949;
+}
+.balance-card{
+    margin: 0px auto;
+    background: linear-gradient(135deg, hsla(277, 100%, 89%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
+    color: #00308F;
+    width: 80%;
+    height: 20vh;
+    border-radius: 10px;
+}
+.acct-balance{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.number{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+.first{
+    position: relative;
+    top: 5vh;
+}
+.card-history{
+    margin-top: 15px;
+    margin-right: 45px;
+    display: flex;
+    justify-content: right;
+}
+#btn-card-history{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background: #A4D3F6;
+    color: #00308F;
+    cursor: pointer;
+}
+.fa-angle-down{
+    border: 2px solid #00308F;
+    border-radius: 10px;
+    padding: 2px 5px;
+    margin-right: -5px;
+    margin-left: 15px;
+}
+.mini-bar{
+    height: 15vh;
+    width: 5vw;
+    background: linear-gradient(135deg, hsla(277, 100%, 89%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
+    padding: 10px 14px;
+    transition: all 0.5s ease;
+    position: fixed;
+    /* margin-top: -25vh; */
+    border-radius: 10px;
+    top: 25vh;
+}
+.mini-bar ul{
+    margin-top: -10px;
+    margin-left: -70px;
+}
+.mini-bar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0px 5px;
+    list-style: none;
+    line-height: 50px;
+}
+.mini-bar ul li .settip{
+    position: absolute;
+    left: 152px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 6px ;
+    height: 35px;
+    width: 122px;
+    background: #A4D3F6;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0s;
+    opacity: 0;
+    /* pointer-events: none; */
+    display: block;
+    z-index: 1;
+}
+.mini-bar ul li:hover .settip {
+    transition: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
+}
+.mini-bar a{
+    color: #00308F;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    padding-left: 10px;
+    font-size: 22px;
+    white-space: nowrap;
+}
+.mini-bar a:hover{
+    color: #00308F;
+    background: #fff;
+    margin-top: 10px;
+    height: 30px;
+}
+.mini-bar i{
+    /* height: 50px; */
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+.mini-bar ._name{
+    opacity: 0;
+    pointer-events: none;
+}
+.second{
+    margin-left: 20px;
+}
+.ex_top{
+    display: flex;
+    gap: 250px;
+    color: #494949;
+    margin-top: 5px;
+}
+.ex_top h3{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.ex_top a{
+    color: #494949;
+}
+.fa-filter{
+    transform: translateY(15px);
+}
+.ex_list{
+    margin-top: -15px;
+}
+.ex_list ul{
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.ex_list ul li{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 1px 1px #808080;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ex_list ul li a{
+    text-decoration: none;
+    color: #494949;
+}
+.expenses1{
+    display: flex;
+    width: 98%;
+    box-shadow: 1px 1px 1px 1px #808080;
+    border-radius: 10px;
+}
+.fa-bell-concierge{
+    font-size: 20px;
+    padding: 30px;
+    color: #00308F;
+}
+.expenses1 .indicator{
+    border-left: 1px solid #494949;
+    margin-left: 0px;
+    padding-left: 10px;
+    color: #494949;
+}
+.indicator .date{
+    margin-top: -10px;
+    font-size: 12px;
+}
+.expenses1 .cost{
+    margin-left: 130px;
+    padding-top: 20px;
+    color: #c70000;
+    font-weight: bold;
+}
+.expenses2{
+    display: flex;
+    width: 98%;
+    box-shadow: 1px 1px 1px 1px #808080;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.fa-plane{
+    font-size: 20px;
+    padding: 30px;
+    color: #00308F;
+}
+.expenses2 .indicator{
+    border-left: 1px solid #494949;
+    margin-left: 0px;
+    padding-left: 10px;
+    color: #494949;
+}
+.expenses2 .cost{
+    margin-left: 140px;
+    padding-top: 20px;
+    color: #c70000;
+    font-weight: bold;
+}
+.expenses3{
+    display: flex;
+    width: 98%;
+    box-shadow: 1px 1px 1px 1px #808080;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.fa-wrench{
+    font-size: 20px;
+    padding: 30px;
+    color: #00308F;
+}
+.expenses3 .indicator{
+    border-left: 1px solid #494949;
+    margin-left: 0px;
+    padding-left: 10px;
+    color: #494949;
+}
+.expenses3 .cost{
+    margin-left: 140px;
+    padding-top: 20px;
+    color: #c70000;
+    font-weight: bold;
+}
+.third{
+    position: relative;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 400px;
+    border-radius: 10px;
+}
+.third h3{
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid #A4D3F6;
+    font-size: 20px;
+    color: #494949;
+}
+.payment-type ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+}
+.payment-type ul li a{
+    color: #00308F;
+    text-decoration: none;
+} 
+.fa-money-bill{
+    font-size: 25px;
+}
+.fa-bitcoin{
+    font-size: 25px;
+    margin-left: 30px;
+}
+.third #form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+#form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #808080;
+    margin: 30px 0px 30px 20px;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0px  5px 0px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position: absolute;
+    top: 40%;
+    padding-bottom: 30px;
+    left: 5px;
+    color: #000;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #00308F;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: 5px;
+    color: #00308F;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+#btn-pay{
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    background: #AD2DFD;
+    color: #00308F;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+#btn-pay:hover{
+    background: #680ba1;
+    color: #0549d1;
+}
+
+/* for ipad screen */
+
+@media only screen and (min-width: 800px) {
+    .logo a .text{
+        margin-left: -30px;
+    }
+    .notif{
+        margin-left: 700px;
+    }
+    .number{
+        margin-top: 140px;
+    }
+    .mini-bar{
+        width: 3vw;
+    }
+    .ex_top{
+        gap: 600px;
+    }
+    .expenses1 .cost{
+        margin-left: 480px;
+    }
+    .expenses2 .cost{
+        margin-left: 500px;
+    }
+    .expenses3 .cost{
+        margin-left: 500px;
+    }
+}
+
+/* for laptop screen */
+
+@media only screen and (min-width: 1200px){
+    .logo a > img{
+        width: 7vw;
+        height: 12vh;
+    }
+    .logo a .text{
+        margin-left: -30px;
+    }
+    .notif{
+        margin-left: 1500px;
+    }
+    .balance-card{
+        height: 40vh;
+    }
+    .number{
+        margin-top: 220px;
+    }
+    .mini-bar{
+        top: 27vh;
+        width: 1.5vw;
+        height: 20vh;
+    }
+    .ex_top{
+        gap: 1380px;
+    }
+    .ex_list ul{
+        justify-content: center;
+    }
+    .third{
+        margin-top: 100px;
+    }
+    .expenses1 .cost{
+        margin-left: 1200px;
+    }
+    .expenses2 .cost{
+        margin-left: 1220px;
+    }
+    .expenses3 .cost{
+        margin-left: 1220px;
+    }
+}
