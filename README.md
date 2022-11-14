@@ -1,2 +1,2 @@
-# Finess
+# Finesse
 My First Repository 
