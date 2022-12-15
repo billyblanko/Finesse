@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', sans-serif;
-    background: url(/pay_img/pattern.jpg);
+    background: url(/Finesse/pay_img/pattern.jpg);
 }
 .header{
     position: fixed;
@@ -87,7 +87,7 @@ nav a{
 }
 .launch{
     background: transparent;
-    background-image: url(/pay_img/5807361-rmbg.png);
+    background-image: url(/Finesse/pay_img/5807361-rmbg.png);
     background-size: 80%;
     position: absolute;
     top: 25vh;
@@ -335,7 +335,7 @@ nav a{
         /* padding-left: 25%; */
     }
     .text-payola{
-        background: url(/pay_img/SL-031121-41400-12.jpg);
+        background: url(/Finesse/pay_img/SL-031121-41400-12.jpg);
         background-image: cover;
         background-size: 100vh;
         background-repeat: no-repeat;

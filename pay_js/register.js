@@ -43,7 +43,7 @@ $('#user').click(function() {
       message.style.color = 'red';
       return false;
   }else{
-      window.location.href = 'user.html'
+      window.location.href = '/Finesse/user.html'
   }
 })
 
