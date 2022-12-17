@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(/Finesse/pay_img/pattern.jpg);
+    background: url(/pay_img/pattern.jpg);
 }
 .top{
     display: flex;
@@ -93,7 +93,7 @@ body{
 .faq{
     /* border: 1px solid black; */
     height: 95vh;
-    background-image: url(/Finesse/pay_img/customer_loyalty.jpg);
+    background-image: url(/pay_img/customer_loyalty.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -379,7 +379,7 @@ body{
         width: 79.2vw;
     }
     .faq{
-        background-image: url(/Finesse/pay_img/customer_loyalty.jpg);
+        background-image: url(/pay_img/customer_loyalty.jpg);
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: left center;

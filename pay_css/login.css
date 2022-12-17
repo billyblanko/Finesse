@@ -4,7 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', sans-serif;
-    background: url(/Finesse/pay_img/pattern.jpg);
+    background: url(/pay_img/pattern.jpg);
 }
 
 /* for mobile phone screen */

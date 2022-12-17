@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url(/Finesse/pay_img/pattern.jpg);
+    background: url(/pay_img/pattern.jpg);
 }
 .header{
     position: fixed;
@@ -297,7 +297,7 @@ nav a:hover{
  }
  .remark{ 
     background-color: #fff;
-    background-image: url(/Finesse/pay_img/2456038.jpg);
+    background-image: url(/pay_img/2456038.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -759,7 +759,7 @@ nav a:hover{
       top: 160vh;
     }
     .text-payola{
-      background: url(/Finesse/pay_img/SL-031121-41400-12.jpg);
+      background: url(/pay_img/SL-031121-41400-12.jpg);
       background-image: cover;
       background-size: 65vh;
       background-repeat: no-repeat;
@@ -787,7 +787,7 @@ nav a:hover{
    }
    .remark{ 
       background-color: #fff;
-      background-image: url(/Finesse/pay_img/2456038.jpg);
+      background-image: url(/pay_img/2456038.jpg);
       background-size: 100%;
       background-repeat: no-repeat;
       position: absolute;
@@ -1223,7 +1223,7 @@ nav a:hover{
         /* padding-left: 25%; */
     }
     .text-payola{
-        background: url(/Finesse/pay_img/SL-031121-41400-12.jpg);
+        background: url(/pay_img/SL-031121-41400-12.jpg);
         background-image: cover;
         background-size: 100vh;
         background-repeat: no-repeat;
@@ -1389,7 +1389,7 @@ nav a:hover{
      }
      .remark{ 
         background-color: #fff;
-        background-image: url(/Finesse/pay_img/2456038.jpg);
+        background-image: url(/pay_img/2456038.jpg);
         background-size: 42%;
         background-repeat: no-repeat;
         position: absolute;
