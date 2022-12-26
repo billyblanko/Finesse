@@ -92,7 +92,7 @@ body{
  }
 .faq{
     /* border: 1px solid black; */
-    height: 95vh;
+    height: 110vh;
     background-image: url(/pay_img/customer_loyalty.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ body{
 }
 #accordion li{
     list-style-type: none;
-    width: 100%;
+    width: 80%;
     margin-bottom: 10px;
     background: #060221;
     padding: 10px;
@@ -227,9 +227,12 @@ body{
    text-decoration: none;
 }
 .emblem{
-    margin-left: 25px;
+    margin-left: 15px;
     display: flex;
-    gap: 80px;
+    gap: 60px;
+}
+.emblem select{
+   width: 50%;
 }
  .fa-twitter{
     color: #A4D3F6;
@@ -335,11 +338,12 @@ body{
      }
      .emblem{
         display: flex;
-        gap: 28vw; 
+        gap: 30vw; 
         margin-top: 5%;
         padding-left: 30px;
      }
      #country{
+        width: 15rem;
         height: 30px;
         font-size: 20px;
      }
@@ -377,6 +381,7 @@ body{
     }
     .tap{
         width: 79.2vw;
+        margin-bottom: 5em;
     }
     .faq{
         background-image: url(/pay_img/customer_loyalty.jpg);
@@ -429,7 +434,7 @@ body{
     } */
     .footer{
         position: absolute;
-        top: 180vh;
+        top: 210vh;
         left: 70px;
     }
     .listing{

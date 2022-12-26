@@ -15,9 +15,11 @@ body{
 }
 .logo a{
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     width: 26%;
-    margin: 0px 130px;
+    margin: 10px 130px;
 }
 .logo a > img{
     width: 15vw;
@@ -80,7 +82,12 @@ nav a{
     column-gap: 15px;
 }
 .buttons .btn-one{
+    display: none;
+}
+.buttons .btn-two{
     padding: 5px 10px;
+    margin-top: 12px;
+    margin-left: 40px;
     background-color: #00308F;
     color: #A4D3F6;
     border: none;
@@ -102,6 +109,9 @@ nav a{
     color: #A4D3F6;
 }
 .writeup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     margin-top: -10px;
     color: #A4D3F6;
@@ -137,16 +147,16 @@ nav a{
     text-align: center;
 }
 .price-col-one ul{
-    margin-left: 20px;
+    margin: 0px, auto;
 }
 .price-col-one li{
     list-style: none;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 .fa-check{
-    font-size: 30px;
+    font-size: 18px;
     color: #70e000;
 }
 .fa-circle{
@@ -158,7 +168,7 @@ nav a{
 .price-col-one .btn-plan{
     border: none;
     border-radius: 10px;
-    margin-left: 70px;
+    margin-left: 50px;
     background-color: #00308F;
     color: #fff;
     padding: 15px 50px;
@@ -190,12 +200,12 @@ nav a{
     margin-left: 5px;
 }
 .price-col ul{
-    margin-left: 20px;
+    margin: 0px, auto;
 }
 .price-col li{
     list-style: none;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 .fa-star{
@@ -204,7 +214,7 @@ nav a{
 .price-col .btn-plan{
     border: none;
     border-radius: 10px;
-    margin-left: 70px;
+    margin-left: 0px;
     background-color: #00308F;
     color: #fff;
     padding: 15px 50px;
@@ -213,7 +223,7 @@ nav a{
 .btn-plan-p{
     border: none;
     border-radius: 10px;
-    margin-left: 90px;
+    margin-left: 65px;
     background-color: #00308F;
     color: #fff;
     padding: 15px 50px;
@@ -241,17 +251,18 @@ nav a{
     margin-left: 5px;
 }
 .price-col-p ul{
-    margin-left: 20px;
+    margin: 0px, auto;
 }
 .price-col-p li{
     list-style: none;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .price-col-p .btn-plan{
     border: none;
     border-radius: 10px;
-    margin-left: 90px;
+    margin-left: 70px;
     background-color: #00308F;
     color: #fff;
     padding: 15px 50px;
@@ -263,7 +274,10 @@ nav a{
 .emblem{
     margin-left: 25px;
     display: flex;
-    gap: 80px;
+    gap: 40px;
+}
+select{
+    width: 50%;
 }
  .fa-twitter{
     color: #A4D3F6;
@@ -282,11 +296,15 @@ nav a{
 
  /* for ipad screen */
  @media only screen and (min-width: 800px) {
+    .header{
+        height: 20vw;
+    }
     .logo{
         margin-top: 40px;
     }
     .logo a{
-       margin: 10px auto;
+        font-size: 25px;
+       margin: 0px auto;
     }
     .logo a .text{
        margin-left: -30px;
@@ -296,12 +314,13 @@ nav a{
        top: -5px;
        left: 78vw;
     }
-    .buttons .btn-one{
+    .buttons .btn-two{
        font-size: 18px;
+       transform: translateY(-60px);
     }
     .toggle-btn-main{
         position: relative;
-        top: 28px;
+        top: -20px;
         cursor: pointer;
      }
     nav a{
@@ -311,51 +330,53 @@ nav a{
         margin-left: 150px;
     }
     .price-col-one , .price-col , .price-col-p{
-        margin-left: 5%;
+        margin: auto;
     } 
     .price-col-one , .price-col{
+        width: 50vw;
         height: 75vh;
     }
     .price-col-p{
+        width: 50vw;
         height: 79vh;
     }
     .price-col-one ul{
-        margin-left: 15%;
+        margin-left: 5%;
     }
     .price-col ul{
-        margin-left: 15%;
+        margin-left: 5%;
     }
     .price-col-p ul{
-        margin-left: 15%;
+        margin-left: 5%;
     }
     .price-col-one .btn-plan{
         position: relative;
         top: 10%;
-        left: 150px;
+        left: 50px;
     }
     .price-col .btn-plan{
         position: relative;
         top: 10%;
-        left: 150px;
+        left: 50px;
     }
     .price-col .btn-plan-p{
         position: relative;
         top: 10%;
-        left: 150px;
+        left: 50px;
     }
     .price-col-p .btn-plan{
         position: relative;
         top: 10%;
-        left: 150px;
+        left: 50px;
     }
     .emblem{
         display: flex;
-        gap: 28vw; 
+        gap: 35vw; 
         margin-top: 5%;
         padding-left: 30px;
      }
      #country{
-        height: 30px;
+        width: 12rem;
         font-size: 20px;
      }
      .bxf{
@@ -389,9 +410,11 @@ nav a{
         display: flex;
         background: linear-gradient(135deg, hsla(277, 95%, 83%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
         margin-top: -35px;
+        height: 20vh;
     }
     .logo{
         margin-top: 60px;
+        margin-left: 50px;
     }
     .logo a{
         margin-left: 0;
@@ -406,7 +429,7 @@ nav a{
     .logo a .text{
         font-weight: bolder;
         font-size: 35px;
-        margin-top: 3vh;
+        margin-top: 5vh;
         margin-left: -18px;
         color: #00308F;
     }
@@ -434,18 +457,18 @@ nav a{
         display: none;
     }
     .buttons{
-        margin-left: 0vw;
         transform: translateY(100px);
     }
-    .buttons .btn-one{
+    .buttons .btn-two{
         cursor: pointer;
         text-decoration: none;
         background-color: #00308F;
         color: #c7e2f7;
         font-size: 18px;
         height: 15%;
+        transform: translateY(10px);
     }
-    .buttons .btn-one:hover{
+    .buttons .btn-two:hover{
       background-color: #0343c4;
     }
     .pricing{
@@ -459,8 +482,8 @@ nav a{
     }
     .price-row{
         display: flex;
-        column-gap: 30px;
-        padding-left: 10%;
+        justify-content: center;
+        align-items: center;
     }
     .price-col{
         width: 30vw;

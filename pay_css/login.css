@@ -72,7 +72,7 @@ body{
     justify-content: center;
 }
 .intro .fixed{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 .intro .auto-type{
@@ -83,7 +83,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    width: 400px;
+    width: 350px;
     background: linear-gradient(135deg, hsla(277, 100%, 89%, 1) 3%, hsla(206, 82%, 80%, 1) 62%);
     border-radius: 10px;
 }
@@ -192,6 +192,9 @@ button[type="submit"]:hover{
     display: flex;
     gap: 80px;
 }
+#country{
+    width: 10rem;
+}
  .fa-twitter{
     color: #A4D3F6;
  }
@@ -250,9 +253,12 @@ button[type="submit"]:hover{
         font-size: 40px;
         font-weight: 600;
     }
+    .footer{
+        top: 90vh;
+    }
     .emblem{
         display: flex;
-        gap: 28vw;
+        gap: 35vw;
         margin-top: 5%;
         padding-left: 20px;
      }

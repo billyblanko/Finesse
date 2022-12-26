@@ -808,6 +808,21 @@ nav a:hover{
       left: 51.5%;
       border-radius: 5px;
    }
+   .remark-right{
+      top: 45vh;
+   }
+   .remark1 h3{
+      margin-top: -100px;
+   }
+   .remark2 h3{
+      margin-top: -100px;
+   }
+   .remark3 h3{
+      margin-top: -100px;
+   }
+   .remark4 h3{
+      margin-top: -100px;
+   }
    .android .for{
       margin-left: 80px;
    }
@@ -958,12 +973,13 @@ nav a:hover{
       display: flex;
       /* background: linear-gradient(135deg, hsla(277, 95%, 83%, 1) 3%, hsla(206, 82%, 80%, 1) 62%); */
       margin-top: -20px;
+      height: 13vh;
   }
   .logo{
-   margin-top: 1px;
+   margin-top: 10px;
   }
   .logo a{
-      margin-left: 0;
+      margin-left: -80px;
   }
   .logo a:hover{
     text-decoration: none;
@@ -1007,15 +1023,16 @@ nav a:hover{
       margin-left: 0vw;
       transform: translateY(100px);
   }
-  .buttons .btn-one{
+  .buttons .btn-two{
       cursor: pointer;
       text-decoration: none;
       background-color: #00308F;
       color: #c7e2f7;
       font-size: 18px;
       height: 15%;
+      transform: translate(-50px, 80px);
   }
-  .buttons .btn-one:hover{
+  .buttons .btn-two:hover{
     background-color: #0343c4;
   }
     .side{
@@ -1419,6 +1436,7 @@ nav a:hover{
         grid-template-columns: repeat(var(--num-cols), 50px);
         display: grid;
         height: 30vh;
+        top: 20px;
      }
      .remark1{
         border: none;
@@ -1433,11 +1451,12 @@ nav a:hover{
         margin-top: 10px;
      }
      .remark1 > h3{
+        transform: translateY(15px);
         margin-left: 160px;
         color: #00308F;
      }
      .remark1 .starz{
-        margin-top: -10px;
+        margin-top: 20px;
         margin-left: 155px;
         color: #ffd60a;
      }
@@ -1447,7 +1466,7 @@ nav a:hover{
         font-size: 18px;
      }
      .remark-para1{
-        margin: 0px 10px 10px;
+        margin: 40px 10px 10px;
         transform: translateY(60px);
         background-color: #00308F;
         height: 10vh;
@@ -1467,16 +1486,17 @@ nav a:hover{
         margin-top: 10px;
      }
      .remark2 > h3{
+        transform: translateY(15px);
         margin-left: 160px;
         color: #00308F;
      }
      .remark2 .starz{
-        margin-top: -10px;
+        margin-top: 20px;
         margin-left: 175px;
         color: #ffd60a;
      }
      .remark-para2{
-        margin: 0px 10px 10px;
+        margin: 30px 10px 10px;
         transform: translateY(60px);
         background-color: #00308F;
         height: 10vh;
@@ -1498,16 +1518,17 @@ nav a:hover{
         margin-top: 10px;
      }
      .remark3 > h3{
+        transform: translateY(15px);
         margin-left: 160px;
         color: #00308F;
      }
      .remark3 .starz{
-        margin-top: -10px;
+        margin-top: 20px;
         margin-left: 155px;
         color: #ffd60a;
      }
      .remark-para3{
-        margin: 0px 10px 10px;
+        margin: 30px 10px 10px;
         transform: translateY(60px);
         background-color: #00308F;
         height: 10vh;
@@ -1527,19 +1548,20 @@ nav a:hover{
         margin-top: 10px;
      }
      .remark4 > h3{
+        transform: translateY(15px);
         margin-left: 160px;
         color: #00308F;
      }
      .remark4 .starz{
-        margin-top: -10px;
+        margin-top: 20px;
         margin-left: 155px;
         color: #ffd60a;
      }
      .remark-para4{
-        margin: 0px 10px 10px;
+        margin: 15px 10px 10px;
         transform: translateY(60px);
         background-color: #00308F;
-        height: 10vh;
+        height: 12vh;
         padding-bottom: 10px;
         border-radius: 5px;
      }
