@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pay_css/user.css">
-    <link rel="shortcut icon" href="/pay_img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/finesse/pay_css/user.css">
+    <link rel="shortcut icon" href="/finesse/pay_assets/pay_img/favicon-32x32.png" type="image/x-icon">
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
     <title>Payola</title>
 </head>
@@ -72,13 +72,20 @@
                 </a>
                 <span class="tooltip">History</span>
             </li>
+            <li>
+                <a href="/finesse/index.php">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="link_name">Log Out</span>
+                </a>
+                <span class="tooltip">Log Out</span>
+            </li>
         </ul>
     </div>
     <div class="home_content">
         <div class="property">
-            <a href="/index.html">
-                <img src="/pay_img/payola.png" alt="">
-                <p class="text">ayola</p>
+            <a href="/finesse/index.php">
+                <img src="/finesse/pay_assets/pay_img/payola.png" alt="">
+                <p class="text-logo">ayola</p>
             </a>
         </div>
         <div class="notif">
@@ -130,11 +137,6 @@
                 <i class="fa-solid fa-rotate"></i><br>
                 Convert
             </button>
-        </div>
-        <div class="out">
-            <a href="/index.html">
-                <i class="fa-solid fa-right-from-bracket"></i>
-            </a>
         </div>
     </div>
     <div class="footer">
@@ -247,7 +249,7 @@
         </div>
     </div>
 </body>
-<script src="/pay_bts/dist/js/jquery-3.2.1.min.js"></script>
-<script src="/pay_js/user.js"></script>
+<script src="/finesse/pay_bts/dist/js/jquery-3.2.1.min.js"></script>
+<script src="/finesse/pay_js/user.js"></script>
 <script src="https://kit.fontawesome.com/15b7b8224a.js" crossorigin="anonymous"></script> 
 </html>

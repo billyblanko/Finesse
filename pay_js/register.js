@@ -1,6 +1,7 @@
+'use strict';
+
 $('#user').click(function() {
-  let firstname = $('#firstname').val()
-  let lastname = $('#lastname').val()
+  let fullname = $('#fullname').val()
   let username = $('#username').val()
   let email = $('#email').val()
   let telephone = $('#telephone').val()
@@ -8,13 +9,8 @@ $('#user').click(function() {
   let conpassword = $('#conpassword').val()  
   let message = $('#message')[0]
 
-  if(firstname == null || firstname == ""){
-      message.textContent = 'firstname required';
-      message.style.color = 'red';
-      return false;
-  }
-  if(lastname == null || lastname == ""){
-      message.textContent = 'lastname required';
+  if(fullname == null || fullname == ""){
+      message.textContent = 'fullname required';
       message.style.color = 'red';
       return false;
   }
@@ -25,6 +21,11 @@ $('#user').click(function() {
   }
   if(email == null || email == ""){
       message.textContent = 'email required';
+      message.style.color = 'red';
+      return false;
+  }
+  if(address == null || address == ""){
+      message.textContent = 'address required';
       message.style.color = 'red';
       return false;
   }
@@ -43,7 +44,7 @@ $('#user').click(function() {
       message.style.color = 'red';
       return false;
   }else{
-      window.location.href = '/user.html'
+      window.location.href = '/finesse/user.php'
   }
 })
 

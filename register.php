@@ -1,50 +1,59 @@
+<?php 
+    require_once('../finesse/includes/function.php'); 
+
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        print_r($_POST);
+    }
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pay_css/register.css">
+    <link rel="stylesheet" href="/finesse/pay_css/style.css?<?php echo time(); ?>">
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
-    <link rel="shortcut icon" href="/pay_img/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/finesse/pay_assets/pay_img/favicon-32x32.png" type="image/x-icon">
     <title>Payola</title>
 </head>
-<body>
-    <div class="top">
-        <div class="logos">
-            <a href="/index.html">
-                <img src="/pay_img/payola.png" alt="">
-                <p class="name">ayola</p>
+<body> 
+    <div class="top-client">
+        <div class="logos-client">
+            <a href="/finesse/index.php">
+                <img src="/finesse/pay_assets/pay_img/payola.png" alt="">
+                <p class="name-client">ayola</p>
             </a>
         </div>
     </div>
     <div class="intro">
-        <h1 class="fixed">Welcome to <span class="auto-type"></span></h1>
+        <h1 class="fixed">Welcome to <span class="auto-type "></span></h1>
     </div>
     <div class="register">
         <h5>Register</h5>
-        <div id="form">
+        <form id="myForm" method="POST" disabled>
             <div class="txt_written">
-                <input type="text" id="firstname" placeholder="enter first-name" required>
+                <input type="text" id="fullname" placeholder="enter fullname" name="fullname" required>
                 <span></span>
-                <label class="label-one"><i class="fa-sharp fa-solid fa-user"></i> First Name</label>
+                <label class="label-one"><i class="fa-sharp fa-solid fa-user"></i> Fullname</label>
             </div>
+
             <div class="txt_written">
-                <input type="text" id="lastname" placeholder="enter last-name" required>
-                <span></span>
-                <label class="label-two"><i class="fa-sharp fa-solid fa-user"></i> Last Name</label>
-            </div>
-            <div class="txt_written">
-                <input type="text" id="username" placeholder="enter username" required>
+                <input type="text" id="username" placeholder="enter username" name="username" required>
                 <span></span>
                 <label class="label-two"><i class="fa-sharp fa-solid fa-user"></i> Username</label>
             </div>
             <div class="txt_written">
-                <input type="email" id="email" placeholder="enter email" required>
+                <input type="email" id="email" placeholder="enter email" name="email" required>
                 <span></span>
                 <label class="label-one"><i class='fa fa-envelope'></i> Email</label>
             </div>
             <div class="txt_written">
-                <input type="tel" id="telephone" placeholder="enter phone no." required>
+                <input type="address" id="address" placeholder="enter address" name="address" required>
+                <span></span>
+                <label class="label-one"><i class="fa-solid fa-location-dot"></i> Address</label>
+            </div>
+            <div class="txt_written">
+                <input type="tel" id="telephone" placeholder="enter phone no." name="telephone" required>
                 <span></span>
                 <label class="label-one"><i class="fa fa-phone"></i> Phone No.</label>
             </div>
@@ -54,7 +63,7 @@
                 <label class="label-date">Date Of Birth</label>
             </div>
             <div class="txt_written">
-                <input type="password" id="password" placeholder="enter password" required>
+                <input type="password" id="password" placeholder="enter password" name="password" required>
                 <span></span>
                 <label class="label-one"><i class="fa-solid fa-lock"></i> Password</label>
             </div>
@@ -63,80 +72,31 @@
                 <span></span>
                 <label class="label-one"><i class="fa-solid fa-lock"></i> Confirm Password</label>
             </div>
-            <div class="business">
+            <div class="sign-business">
                 <h4>Do You Own A Business</h4>
                 <p>
                     <input type="radio" name="gender">Yes
                     <input type="radio" name="gender">No
                 </p>
             </div>
-            <div class="check">
+            <div class="sign-check">
                 <p>
-                    <input type="checkbox"> I agree to the collection and processing of my personal data, in with the data regulations described in <a href="" class="policy">Payola Privacy Policy</a>
+                <input type="checkbox">I agree to the collection and processing of my personal data, in with the data regulations described in <a href="" class="policy">Payola Privacy Policy</a>
                 </p>
             </div>
             <div id="message"></div>
-            <button href="#" type="submit" value="login" id="user">Register</button>
-        </div id="form">
+            <button type="submit" value="login" id="user">Register</button>
+        </form>
     </div>
     <div class="login-link">
-        Already have an account ?<a href="/login.html">Login</a>
+        Already have an account ?<a href="/finesse/login.php">Login</a>
     </div>
-    <div class="footer">
-        <div class="emblem">
-            <select id="country">
-                <option value="uk">&#x1F1EC;&#x1F1E7; United Kingdom</option>
-                <option value="us">&#x1F1FA;&#x1F1F8; United States of America</option>
-                <option value="arg">&#x1F1E6;&#x1F1F7; Argentina</option>
-                <option value="am">&#x1F1E6;&#x1F1F2;  Armenia</option>
-                <option value="aus">&#x1F1E6;&#x1F1FA; Australia</option>
-                <option value="at">&#x1F1E6;&#x1F1F9; Austria</option>
-                <option value="bel">&#x1F1E7;&#x1F1EA; Belgium</option>
-                <option value="bra">&#x1F1E7;&#x1F1F7; Brazil</option>
-                <option value="cnd">&#x1F1E8;&#x1F1E6; Canada</option>
-                <option value="ch">&#x1F1E8;&#x1F1F3; China</option>
-                <option value="col">&#x1F1E8;&#x1F1F4; Colombia</option>
-                <option value="fr">&#x1F1EB;&#x1F1F7; France</option>
-                <option value="deu">&#x1F1E9;&#x1F1EA; Germany</option>
-                <option value="it">&#x1F1EE;&#x1F1F9; Italy</option>
-                <option value="ng">&#x1F1F3;&#x1F1EA; Niger</option>
-                <option value="ngn">&#x1F1F3;&#x1F1EC; Nigeria</option>
-                <option value="nw">&#x1F1F3;&#x1F1F4; Norway</option>
-                <option value="pol">&#x1F1F5;&#x1F1F1; Poland</option>
-                <option value="por">&#x1F1F5;&#x1F1F9; Portugal</option>
-                <option value="qr">&#x1F1F6;&#x1F1E6; Qatar</option>
-                <option value="rm">&#x1F1F7;&#x1F1F4; Romania</option>
-                <option value="ru">&#x1F1F7;&#x1F1FA; Russia</option>
-                <option value="sg">&#x1F1F8;&#x1F1EC; Singapore</option>
-                <option value="za">&#x1F1FF;&#x1F1E6; South Africa</option>
-                <option value="sk">&#x1F1F0;&#x1F1F7; South Korea</option>
-                <option value="sp">&#x1F1EA;&#x1F1F8; Spain</option>
-                <option value="sw">&#x1F1F8;&#x1F1EA; Sweden</option>
-                <option value="sui">&#x1F1E8;&#x1F1ED; Switzerland</option>
-                <option value="tur">&#x1F1F9;&#x1F1F7; Turkey</option>
-                <option value="ukr">&#x1F1FA;&#x1F1E6; Ukraine</option>
-                <option value="uae">&#x1F1E6;&#x1F1EA; United Arab Emirates</option>
-                <option value="vn">&#x1F1FB;&#x1F1F3; Vietnam</option>
-            </select>
-            <div class="bxf">
-                <a href="">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="">
-                    <i class='fab fa-meta'></i>
-                </a>
-                <a href="">
-                    <i class='fab fa-google' ></i>
-                </a>
-                <a href="">
-                    <i class='fab fa-amazon' ></i>
-                </a>
-            </div>
-        </div>
-    </div>
+    <!-- for footer -->
+    <?php require_once('footer.php'); ?>
+
 </body>
-<script src="/pay_bts/dist/js/jquery-3.2.1.min.js"></script>
+<script src="/finesse/pay_assets/dist/js/jquery-3.2.1.min.js"></script>
 <script src="https://kit.fontawesome.com/15b7b8224a.js" crossorigin="anonymous"></script> 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="/pay_js/register.js"></script>
+<script src="/finesse/pay_js/register.js"></script>
 </html>

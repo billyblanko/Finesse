@@ -3,22 +3,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pay_css/contact.css">
-    <link rel="shortcut icon" href="/pay_img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/finesse/pay_css/style.css">
+    <link rel="shortcut icon" href="/pay_assets/pay_img/favicon-32x32.png" type="image/x-icon">
     <title>Payola</title>
 </head>
 <body>
-    <div class="top">
-        <div class="logo">
-            <a href="/index.php">
-                <img src="/pay_img/payola.png" alt="">
-                <p class="text">ayola</p>
+    <div class="top-contact">
+        <div class="logo-contact">
+            <a href="/finesse/index.php">
+                <img src="/finesse/pay_assets/pay_img/payola.png" alt="">
+                <p class="text-contact">ayola</p>
             </a>
         </div>
     </div>
     <div class="tap">
-        <h1 class="header">Tap In</h1>
-        <p class="contact">Contact our support team below, leave a comment for review or complain. Thanks!</p>
+        <h1 class="contact-header">Tap In</h1>
+        <p class="contact-header">Contact our support team below, leave a comment for review or complain. Thank You!</p>
         <div class="support">
             <form action="">
                 <div class="input-group">
@@ -31,7 +31,7 @@
                 </div>
                 <div class="input-group">
                     <input type="text" id="email" required>
-                    <label for="email" class="label"><i class="fas fa-envelope"></i> Email Id</label>
+                    <label for="email" class="label"><i class="fas fa-envelope"></i> Email</label>
                 </div>
                 <div class="input-group">
                     <textarea id="message" rows="0" required></textarea>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="faq">
-        <h1 class="header">FAQ</h1>
+        <h1 class="faq-header">FAQ</h1>
         <ul id="accordion">
             <li>
                 <label for="first" class="label-one"> How to pay for advance plan <i class="fa-regular fa-plus"></i></label>
@@ -81,87 +81,10 @@
             </li>
         </ul>
       </div>
-      <div class="footer">
-        <div class="listing">
-            <div class="listing-1">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="">Send money</a></li>
-                    <li><a href="">Receive Payment</a></li>
-                    <li><a href="">Buy Digital Assets</a></li>
-                    <li><a href="">Save Assets</a></li>
-                </ul>
-            </div>
-            <div class="listing-2">
-                <h4>Payola</h4>
-                <ul>
-                    <li><a href="">Blockchain</a></li>
-                    <li><a href="">Clients</a></li>
-                    <li><a href="">Data</a></li>
-                    <li><a href="">Careers</a></li>
-                </ul>
-            </div>
-            <div class="listing-3">
-                <h4>Tap In</h4>
-                <ul>
-                    <li><a href="">Contact Team</a></li>
-                    <li><a href="">hello@payola.com</a></li>
-                    <li><a href="">Review</a></li>
-                    <li><a href="">Social media</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="emblem">
-            <select id="country">
-                <option value="uk">&#x1F1EC;&#x1F1E7; United Kingdom</option>
-                <option value="us">&#x1F1FA;&#x1F1F8; United States of America</option>
-                <option value="arg">&#x1F1E6;&#x1F1F7; Argentina</option>
-                <option value="am">&#x1F1E6;&#x1F1F2;  Armenia</option>
-                <option value="aus">&#x1F1E6;&#x1F1FA; Australia</option>
-                <option value="at">&#x1F1E6;&#x1F1F9; Austria</option>
-                <option value="bel">&#x1F1E7;&#x1F1EA; Belgium</option>
-                <option value="bra">&#x1F1E7;&#x1F1F7; Brazil</option>
-                <option value="cnd">&#x1F1E8;&#x1F1E6; Canada</option>
-                <option value="ch">&#x1F1E8;&#x1F1F3; China</option>
-                <option value="col">&#x1F1E8;&#x1F1F4; Colombia</option>
-                <option value="fr">&#x1F1EB;&#x1F1F7; France</option>
-                <option value="deu">&#x1F1E9;&#x1F1EA; Germany</option>
-                <option value="it">&#x1F1EE;&#x1F1F9; Italy</option>
-                <option value="ng">&#x1F1F3;&#x1F1EA; Niger</option>
-                <option value="ngn">&#x1F1F3;&#x1F1EC; Nigeria</option>
-                <option value="nw">&#x1F1F3;&#x1F1F4; Norway</option>
-                <option value="pol">&#x1F1F5;&#x1F1F1; Poland</option>
-                <option value="por">&#x1F1F5;&#x1F1F9; Portugal</option>
-                <option value="qr">&#x1F1F6;&#x1F1E6; Qatar</option>
-                <option value="rm">&#x1F1F7;&#x1F1F4; Romania</option>
-                <option value="ru">&#x1F1F7;&#x1F1FA; Russia</option>
-                <option value="sg">&#x1F1F8;&#x1F1EC; Singapore</option>
-                <option value="za">&#x1F1FF;&#x1F1E6; South Africa</option>
-                <option value="sk">&#x1F1F0;&#x1F1F7; South Korea</option>
-                <option value="sp">&#x1F1EA;&#x1F1F8; Spain</option>
-                <option value="sw">&#x1F1F8;&#x1F1EA; Sweden</option>
-                <option value="sui">&#x1F1E8;&#x1F1ED; Switzerland</option>
-                <option value="tur">&#x1F1F9;&#x1F1F7; Turkey</option>
-                <option value="ukr">&#x1F1FA;&#x1F1E6; Ukraine</option>
-                <option value="uae">&#x1F1E6;&#x1F1EA; United Arab Emirates</option>
-                <option value="vn">&#x1F1FB;&#x1F1F3; Vietnam</option>
-            </select>
-            <div class="bxf">
-                <a href="">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="">
-                    <i class='fab fa-meta'></i>
-                </a>
-                <a href="">
-                    <i class='fab fa-google' ></i>
-                </a>
-                <a href="">
-                    <i class='fab fa-amazon' ></i>
-                </a>
-            </div>
-        </div>
-      </div>
+
+      <!-- footer -->
+      <?php require_once('footer.php'); ?>
+
 </body>
 <script src="https://kit.fontawesome.com/15b7b8224a.js" crossorigin="anonymous"></script> 
 <!-- <script src="/pay_js/all.js"></script> -->

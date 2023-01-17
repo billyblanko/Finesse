@@ -1,11 +1,12 @@
+'use strict';
 
-$('#user').click(function() {
-    let username = $('#username').val()
+$('#user-one').click(function() {
+    let email = $('#email').val()
     let password = $('#password').val()
     let message = $('#message')[0]
 
-    if(username == null || username == ""){
-        message.textContent = 'username required';
+    if(email == null || email == ""){
+        message.textContent = 'email required';
         message.style.color = 'red';
         return false;
     }
@@ -14,13 +15,13 @@ $('#user').click(function() {
         message.style.color = 'red';
         return false;
     }else{
-        window.location.href = '/user.html'
+        window.location.href = '/finesse/user.php'
     }
 });
 
 //for type effect
 
-var typed = new Typed(".auto-type", {
+var typed = new Typed(".auto-type2", {
     strings: ["Payola Service", "Global Transactions" , "Blockchain Network" , "Advance Security"],
     typeSpeed: 150,
     backspeed: 150,
