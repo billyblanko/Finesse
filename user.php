@@ -9,6 +9,7 @@
     <title>Payola</title>
 </head>
 <body>
+    
     <div class="sidebar">
         <div class="icon_content">
             <div class="icon">
@@ -248,6 +249,10 @@
             </div>
         </div>
     </div>
+    
+    <!-- loader effect -->
+    <div class="loader" id="loader"></div>
+    <!-- loader effect end -->
 </body>
 <script src="/finesse/pay_bts/dist/js/jquery-3.2.1.min.js"></script>
 <script src="/finesse/pay_js/user.js"></script>

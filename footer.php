@@ -9,7 +9,7 @@
                 with your loved ones and clients. <br> Endless possibilities with our services !
             </p>
             <div class="create">
-                <a class="btn-create" href="">
+                <a class="btn-create" href="/finesse/register.php">
                     Create Account<i class="fa fa-angle-right"></i>
                 </a>
                 <a class="btn-create" href="">

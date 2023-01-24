@@ -1,9 +1,9 @@
-<?php 
-    require_once('../finesse/includes/function.php'); 
+<?php  
+    // require_once('../finesse/includes/function.php'); 
 
-    if($_SERVER['REQUEST_METHOD'] == "POST"){
-        print_r($_POST);
-    }
+    // if($_SERVER['REQUEST_METHOD'] == "POST"){
+    //     print_r($_POST);
+    // }
 ?>
 
 <html lang="en">
@@ -25,12 +25,13 @@
             </a>
         </div>
     </div>
+    
     <div class="intro">
         <h1 class="fixed">Welcome to <span class="auto-type "></span></h1>
     </div>
     <div class="register">
         <h5>Register</h5>
-        <form id="myForm" method="POST" disabled>
+        <form id="myForm" action="/finesse/includes/registersub.php" method="POST" disabled>
             <div class="txt_written">
                 <input type="text" id="fullname" placeholder="enter fullname" name="fullname" required>
                 <span></span>
@@ -72,16 +73,21 @@
                 <span></span>
                 <label class="label-one"><i class="fa-solid fa-lock"></i> Confirm Password</label>
             </div>
+            <h4>Do You Own A Business</h4>
             <div class="sign-business">
-                <h4>Do You Own A Business</h4>
-                <p>
-                    <input type="radio" name="gender">Yes
-                    <input type="radio" name="gender">No
-                </p>
+                <div class="yes">
+                    <label for="s1">Yes</label>
+                    <input type="radio" name="gender">
+                </div>
+                <div class="no">
+                    <label for="s2">No</label>
+                    <input type="radio" name="gender">
+                </div>
             </div>
             <div class="sign-check">
+            <input type="checkbox">
                 <p>
-                <input type="checkbox">I agree to the collection and processing of my personal data, in with the data regulations described in <a href="" class="policy">Payola Privacy Policy</a>
+                    I agree to the collection and processing of my personal data, with the data regulations described in <a href="" class="policy">Payola Privacy Policy</a>
                 </p>
             </div>
             <div id="message"></div>
@@ -91,6 +97,11 @@
     <div class="login-link">
         Already have an account ?<a href="/finesse/login.php">Login</a>
     </div>
+
+    <!-- loader effect -->
+    <div class="loader" id="loader"></div>
+    <!-- loader effect end -->
+    
     <!-- for footer -->
     <?php require_once('footer.php'); ?>
 

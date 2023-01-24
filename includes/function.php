@@ -1,6 +1,6 @@
 <?php
 
-require_once "connection.php";
+require_once('connection.php');
 
 
 // function created to remove special characters from the info gotten

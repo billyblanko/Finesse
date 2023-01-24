@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/finesse/pay_assets/pay_img/favicon-32x32.png" type="image/x-icon">    <title>Payola</title>
 </head>
 <body>
+    
     <div class="top-clients">
         <div class="logos-clients">
             <a href="/finesse/index.php">
@@ -43,6 +44,10 @@
         </form>
     </div>
 
+    <!-- loader effect -->
+    <div class="loader" id="loader"></div>
+    <!-- loader effect end -->
+    
      <!-- for footer -->
      <?php require_once('footer.php'); ?>
 

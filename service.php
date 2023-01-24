@@ -113,9 +113,14 @@
         </div>
     </div>
 
+    <!-- loader effect -->
+    <div class="loader" id="loader"></div>
+    <!-- loader effect end -->
+    
     <!-- footer -->
     <?php require_once('footer.php'); ?>
 
 </body>
+<script src="/finesse/pay_js/loader.js"></script>
 <script src="https://kit.fontawesome.com/15b7b8224a.js" crossorigin="anonymous"></script>
 </html>

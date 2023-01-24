@@ -1,7 +1,6 @@
 <?php require_once('header.php'); ?>
     <!-- header end -->
 
-    <!-- slider start -->
     <div class="slider">
         <div class="slides">
             <!-- radio start -->
@@ -261,7 +260,7 @@
                 </p>
             </div>
             <div class="mac">
-                <p class="install">
+                <p class="retain">
                     For Macbook<br>
                     <a href="">
                         <i class="fab fa-app-store-ios"></i> Download Now
@@ -278,13 +277,19 @@
             </div>
         </div>
     </div>
+    
+    <!-- loader effect -->
+    <div class="loader" id="loader"></div>
+    <!-- slider start -->
+
     <!-- launch payola end code -->
 
     <!-- footer start -->
     <?php require_once('footer.php'); ?>
-<!-- footer end -->
+    <!-- footer end -->
 
 </body>
 <script src="/finesse/pay_js/slider.js"></script>
+<script src="/finesse/pay_js/loader.js"></script>
 <script src="https://kit.fontawesome.com/15b7b8224a.js" crossorigin="anonymous"></script> 
 </html>

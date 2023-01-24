@@ -27,3 +27,15 @@ var typed = new Typed(".auto-type2", {
     backspeed: 150,
     loop: true
 })
+
+// loader effect
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend" , () =>{
+        document.body.removeChild("loader")
+    })
+})

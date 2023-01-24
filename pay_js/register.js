@@ -1,5 +1,7 @@
 'use strict';
 
+//declaring the input fields as variables
+
 $('#user').click(function() {
   let fullname = $('#fullname').val()
   let username = $('#username').val()
@@ -8,6 +10,37 @@ $('#user').click(function() {
   let password = $('#password').val()
   let conpassword = $('#conpassword').val()  
   let message = $('#message')[0]
+
+
+    // this function is to detect the length of password set at 6
+    function isValidPassword(password) {
+        return password.length >= 6;
+    }
+
+    //this function is to validate gender button
+    function isValidRadio(gender) {
+        var radios = document.getElementsByName(gender);
+        for (var i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    if (!isValidRadio("gender")) {
+        message.textContent = 'Kindly input the fields !';
+        message.style.color = 'red';
+        return false;
+    }
+
+    // function isValidRadio(gender) {
+    //     var radios = document.querySelectorAll('input[gender="' + gender + '"]:checked');
+    //     return radios.length > 0;
+    // }
+    
+
+    // the if statement here is to valdate the input field
 
   if(fullname == null || fullname == ""){
       message.textContent = 'fullname required';
@@ -39,6 +72,11 @@ $('#user').click(function() {
       message.style.color = 'red';
       return false;
   }
+  if(!isValidPassword(password)) {
+        message.textContent = 'Password must be at least 6 characters long!';
+        message.style.color = 'red';
+        return false;
+    }
   if(conpassword == null || conpassword == ""){
       message.textContent = 'conpassword required';
       message.style.color = 'red';
@@ -55,4 +93,16 @@ var typed = new Typed(".auto-type", {
     typeSpeed: 150,
     backspeed: 150,
     loop: true
+})
+
+// loader effect
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend" , () =>{
+        document.body.removeChild("loader");
+    })
 })
