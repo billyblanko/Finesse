@@ -11,8 +11,7 @@ require_once('connection.php');
 
         return $info;
     }
-
-    // echo $info;
+    
 
 // functions created to validate and filter info gotten 
     function sanitizer($sanval){
@@ -26,5 +25,11 @@ require_once('connection.php');
         $data = mysqli_real_escape_string($connect, $string);
 
         return $data;
+    }
+
+    // password encryption
+    function passEncrypt($password){
+        $newPass = md5($password);
+        return $newPass; 
     }
 ?>

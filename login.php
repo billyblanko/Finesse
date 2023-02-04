@@ -22,21 +22,21 @@
     </div>
     <div class="form-two">
         <h5>Login</h5>
-        <form id="myForm" disabled>
+        <form id="myForm" action="/finesse/includes/loginsub.php" method="POST" disabled> 
             <div class="txt_field">
                 <input type="text" id="email" placeholder="enter Email" name="email" required>
                 <span></span>
                 <label class="label-first"><i class="fa-sharp fa-solid fa-user"></i> Email</label>
             </div>
             <div class="txt_field">
-                <input type="password" id="password" placeholder="enter password" required>
+                <input type="password" id="password" placeholder="enter password" name="password" required>
                 <span></span>
                 <label class="label-first"><i class="fa-solid fa-lock"></i> Password</label>
             </div>
             <a href="#" class="pass">Forgot Password</a><br>
             <div id="message"></div>
             
-            <button type="submit" id="user-one" value="login">Submit</button>
+            <button type="submit" id="user-one" value="login" name="submit" >Submit</button>
             
             <div class="signup-link">
                 Don't have account ?<a href="/finesse/register.php">Register</a>

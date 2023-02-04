@@ -8,3 +8,10 @@ window.addEventListener("load", () => {
         document.body.removeChild("loader")
     })
 })
+
+// for onscroll effect
+
+window.addEventListener("scroll", () => {
+    var header = document.querySelector(".header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})

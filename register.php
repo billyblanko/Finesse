@@ -1,11 +1,3 @@
-<?php  
-    // require_once('../finesse/includes/function.php'); 
-
-    // if($_SERVER['REQUEST_METHOD'] == "POST"){
-    //     print_r($_POST);
-    // }
-?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -59,7 +51,7 @@
                 <label class="label-one"><i class="fa fa-phone"></i> Phone No.</label>
             </div>
             <div class="txt_written">
-                <input type="date" required>
+                <input type="date" id="bday" name="birthday" required>
                 <span></span>
                 <label class="label-date">Date Of Birth</label>
             </div>
@@ -69,7 +61,7 @@
                 <label class="label-one"><i class="fa-solid fa-lock"></i> Password</label>
             </div>
             <div class="txt_written">
-                <input type="password" id="conpassword" placeholder="re-enter password" required>
+                <input type="password" id="conpassword" placeholder="re-enter password" name="conpassword" required>
                 <span></span>
                 <label class="label-one"><i class="fa-solid fa-lock"></i> Confirm Password</label>
             </div>
@@ -91,11 +83,11 @@
                 </p>
             </div>
             <div id="message"></div>
-            <button type="submit" value="login" id="user">Register</button>
+            <button type="submit" value="login" id="user" name="submit">Register</button>
         </form>
     </div>
     <div class="login-link">
-        Already have an account ?<a href="/finesse/login.php">Login</a>
+        Already have an account ?<br><a href="/finesse/login.php">Login</a>
     </div>
 
     <!-- loader effect -->

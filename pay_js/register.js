@@ -6,12 +6,13 @@ $('#user').click(function() {
   let fullname = $('#fullname').val()
   let username = $('#username').val()
   let email = $('#email').val()
+  let address = $('#address').val()
   let telephone = $('#telephone').val()
+  let birthday = $('#bday').val()
   let password = $('#password').val()
   let conpassword = $('#conpassword').val()  
   let message = $('#message')[0]
-
-
+23
     // this function is to detect the length of password set at 6
     function isValidPassword(password) {
         return password.length >= 6;
@@ -33,11 +34,6 @@ $('#user').click(function() {
         message.style.color = 'red';
         return false;
     }
-
-    // function isValidRadio(gender) {
-    //     var radios = document.querySelectorAll('input[gender="' + gender + '"]:checked');
-    //     return radios.length > 0;
-    // }
     
 
     // the if statement here is to valdate the input field
@@ -53,7 +49,7 @@ $('#user').click(function() {
       return false;
   }
   if(email == null || email == ""){
-      message.textContent = 'email required';
+      message.textContent = 'email required <i class="fa-solid fa-circle-xmark"></i>';
       message.style.color = 'red';
       return false;
   }
@@ -67,8 +63,14 @@ $('#user').click(function() {
       message.style.color = 'red';
       return false;
   }
+  if(birthday == null || birthday == ""){
+      message.textContent = 'date of birth required';
+      message.style.color = 'red';
+      return false;
+  }
   if(password == null || password == ""){
       message.textContent = 'password required';
+      innerHTML
       message.style.color = 'red';
       return false;
   }
